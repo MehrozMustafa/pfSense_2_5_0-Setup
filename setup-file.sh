@@ -11,8 +11,8 @@ portsnap fetch extract
 
 pkg install -y open-vm-tools
 
-set pfSense_gui_branch=v2_5_1
-set pfSense_port_branch=v2_5_1
+set pfSense_gui_branch=v2_5_0
+set pfSense_port_branch=v2_5_0
 set product_name=libreSense
 
 cd /usr/local/www/nginx/
@@ -38,7 +38,7 @@ chmod +x /root/sign/sign.sh
 cd /root
 git clone https://github.com/MehrozMustafa/pfsense.git
 cd pfsense
-git checkout RELENG_2_5_1
+git checkout RELENG_2_5_0
 
 rm src/usr/local/share/libreSense/keys/pkg/trusted/*
 cp /root/sign/fingerprint src/usr/local/share/libreSense/keys/pkg/trusted/fingerprint
