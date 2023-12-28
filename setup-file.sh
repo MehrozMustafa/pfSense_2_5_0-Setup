@@ -3,7 +3,7 @@ service sshd restart
 
 pkg install -y pkg nano
 
-pkg install -y git nginx poudriere-devel rsync sudo
+pkg install -y git nginx poudriere-devel rsync sudo screen
 
 pkg install -y vmdktool curl qemu-user-static gtar xmlstarlet pkgconf openssl
 
